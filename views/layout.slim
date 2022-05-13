@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html lang="en"
+    head
+        meta charset="UTF-8"/
+        meta http-equiv="X-UA-Compatible" content="IE=edge"/
+        meta name="viewport" content="width=device-width, initial-scale=1.0"/
+        title Hamburg-slumparen
+        link rel="stylesheet" href="/css/style.css"/
+    body 
+
+        header
+            h1.center Hamburg-slumparen
+
+        section
+            == yield
+
+        section#form_section 
+            form action="/generateburger" method="POST"
+                p Antalet bröd
+                input type="Number" name="bread" min="0"
+                p Antalet biffar
+                input type="Number" name="patty" min="0"
+                p Antalet salad
+                input type="Number" name="lettuce" min="0"
+                br
+                br
+                input type="submit" value="Slumpa mig en burgare!"
