@@ -28,6 +28,5 @@ end
 post('/generateburger') do
     params[:bread] = params[:bread].to_i - 2
     $burger_hash = params
-    p randomizer($burger_hash)
     redirect('/')
 end
