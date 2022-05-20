@@ -7,9 +7,9 @@ $burger_hash = Hash.new
 def randomizer(hash)
     burger_array = []
     if hash.class != NilClass
-        hash.map do |ingredient|
-            for i in 0..(ingredient[1].to_i - 1)
-                burger_array << ingredient[0]
+        hash.map do |element|
+            for i in 0..(element[1].to_i - 1)
+                burger_array << element[0]
             end
         end
         burger_array = burger_array.shuffle

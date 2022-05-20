@@ -126,3 +126,13 @@
     background: yellow;
     color: black;
 }
+
+#onion{
+    display: block;
+    width: 150px;
+    height: 16px;
+    margin: 2px;
+    border-radius: 100px / 50px;
+    background: lightgoldenrodyellow;
+    color: black;
+}
