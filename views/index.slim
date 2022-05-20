@@ -1,8 +1,5 @@
 h2.center Hamburgaren är...
 
-
-- if burger_array.length != 0
-    - burger_array.each do |ingredient|
-        p.center=ingredient
-- else 
-    p.center Ingen burgare :(
+-burger_array.map do |ingredient|
+    p[class="center" id="#{ingredient}"] = ingredient
+end

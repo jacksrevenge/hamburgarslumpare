@@ -9,19 +9,32 @@ html lang="en"
     body 
 
         header
-            h1.center Hamburg-slumparen
+            h1.center Hamburgar-slumparen
 
-        section
-            == yield
+        div.grid_container
+            section#burger_section
+                == yield
 
-        section#form_section 
-            form action="/generateburger" method="POST"
-                p Antalet bröd
-                input type="Number" name="bread" min="0"
-                p Antalet biffar
-                input type="Number" name="patty" min="0"
-                p Antalet salad
-                input type="Number" name="lettuce" min="0"
-                br
-                br
-                input type="submit" value="Slumpa mig en burgare!"
+            section#form_section 
+                h2.center Ingredienser
+                a href="#submit" Ta mig till slump-knappen 
+                form action="/generateburger" method="POST"
+                    p Antalet bröd
+                    input type="Number" name="bread" min="2"
+                    p Antalet biffar
+                    input type="Number" name="patty" min="0"
+                    p Antalet salad
+                    input type="Number" name="lettuce" min="0"
+                    p Antalet ost
+                    input type="Number" name="cheese" min="0"
+                    p Antalet ketchup
+                    input type="Number" name="ketchup" min="0"
+                    p Antalet senap
+                    input type="Number" name="mustard" min="0"
+                    p Antalet saltgurka
+                    input type="Number" name="pickle" min="0"
+                    p Antalet dressing
+                    input type="Number" name="dressing" min="0"
+                    br
+                    br
+                    input#submit type="submit" value="Slumpa mig en burgare!"
