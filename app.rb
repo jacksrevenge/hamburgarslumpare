@@ -12,6 +12,7 @@ def randomizer(hash)
                 burger_array << element[0]
             end
         end
+        
         burger_array = burger_array.shuffle
         burger_array = burger_array.insert(0, "bread_top")
         burger_array = burger_array.insert(-1, "bread_bot")
